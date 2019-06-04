@@ -1,0 +1,199 @@
+extends inc/template
+
+block content
+	main
+		.name
+			.logo
+				- for (var i = 0; i < 56; i++)
+					span.cookie-bit(class=i + 1)
+
+			h1 Techfood.
+			h5.headline Always stocked for your all-nighters and hackathons.
+			p Offers end June 14
+
+		.callout
+			h4 Save 20% off all items.
+			h5 Exclusive for tech field enthusiasts!
+
+		.sale-items
+			.item
+				.quote
+					h2 From healty food to complete junk.
+						small Don't code with an empty stomach.
+
+			.item
+				.item__image
+					img(src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/fruit.png')
+				.item__text
+					strong Dried Mangoes, Dried Apricots
+					small 200g
+				.item__price
+					.discount.half-off
+						p Buy 1 Get 1
+						h3 50
+						h4 4%
+						h5 off
+						p.tiny Equal or lesser value
+						p.small With card
+			.item
+				.item__image
+					img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/chips.png")
+				.item__text
+					strong Pringles
+					small 147g
+					strong Cheetos
+					small 226g
+					strong Doritos
+					small 198g
+				.item__price
+					.discount.default
+						h4
+							span $
+							| 2.49
+						p.small with card
+
+					.discount.more-saves
+						p.small.divider Also save
+						h5
+							span $
+							| 1 off
+						p.tiny With retweet of store's latest tweet
+			.item
+				.item__image
+					img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/tea.png")
+				.item__text
+					strong Twinings Tea
+					small  20 per pack
+				.item__price
+					.discount.default
+						h4
+							span $
+							| 9.99
+						p.small with card
+			.item
+				.item__image
+					img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nuts.png")
+				.item__text
+					strong Nature's Wonders Nuts
+					small 220g-330g
+				.item__price
+					.discount.half-off
+						p Buy 1 Get 1
+						h3 50
+						h4 %
+						h5 off
+						p.tiny Equal or lesser value
+					.discount.more-saves
+						p.small.divider Also save
+						p.tiny When you show us your GitHub profile
+			.item
+				.item__image
+					img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/chobani.png")
+				.item__text
+					strong Chobani Greek Style Yogurt
+					small 170g
+				.item__price
+					.discount.default
+						h4
+							span $
+							| 1.65
+						p.small with card
+			.item
+				.item__image
+					img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/chocs.png")
+				.item__text
+					strong M&M's, Snickers, Kinder Bueno
+					small 170-220g
+				.item__price
+					.discount.default
+						h4
+							span $
+							| 5.99
+						p.small with card
+
+		.coupons
+			.item.horizontal
+				.item__image
+					img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/wine.png")
+				.item__text
+					strong Wolf Blass Yellow Label, Red or White
+					small 750ml
+				.item__price
+					.discount.default
+						h4
+							span $
+							| 21.99
+						p.small with card
+			.item.alternate
+				.item__image
+					img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/bjs.png")
+				.item__text
+					strong Ben & Jerry's
+					small 453ml-478ml
+				.item__price
+					.discount.half-off
+						p Buy 1 Get 1
+						h3 50
+						h4 %
+						h5 off
+						p.tiny Equal or lesser value
+					.discount.more-saves
+						p.small.divider Also save
+						h5
+							span $
+							| 2 off
+						p.tiny With any social media follow
+			.item
+				.item__image
+					img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/ramen.png")
+				.item__text
+					strong Samyang Ramen
+					small 135g-140g
+				.item__price
+					.discount.bulk
+						h4 3
+						p.small for
+						h4 $
+						h3 9
+
+
+		.sale-items-2
+			.quote
+				p For your caffeine needs.
+				small Remember to drink responsibly.
+			.item.horizontal
+				.item__image
+					img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/coffee.png")
+				.item__text
+					strong Starbucks Frappuccino Chilled Coffee Drink
+					small 281ml
+				.item__price
+					.discount.bulk
+						h4 2
+						p.small for
+						h4 $
+						h3 8
+			.item
+				.item__image
+					img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/coke.png")
+				.item__text
+					strong Coca Cola Classic, Sprite Lemon-Lime
+					small 12 x 320ml
+				.item__price
+					.discount.bulk
+						h4 2
+						p.small for
+						h4 $
+						h3 8
+			.item
+				.item__image
+					img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/monster.png")
+				.item__text
+					strong Monster Energy Drink
+					small 500ml
+				.item__price
+					.discount.bulk
+						h4 4
+						p.small for
+						h4 $
+						h3 4
