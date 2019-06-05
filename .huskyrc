@@ -1,5 +1,5 @@
 {
 	"hooks": {
-		"pre-commit": "npm run convert"
+		"pre-commit": "npm run convert; git add src/sass/style.scss"
 	}
 }

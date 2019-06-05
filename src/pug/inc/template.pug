@@ -1,3 +1,5 @@
+block config
+
 doctype html
 html(lang='en-US', class=config.htmlClass)
 	head
@@ -18,7 +20,11 @@ html(lang='en-US', class=config.htmlClass)
 		each js in config.scripts
 			script(src='js')
 
-		link(href='css/style.css', rel='stylesheet')
+		if !config.styleCss
+			link(href='css/style.css', rel='stylesheet')
+		else
+			link(href='css/' + config.styleCss + '.css', rel='stylesheet')
+
 		script(src='js/script.js')
 
 	body

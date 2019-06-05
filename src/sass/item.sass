@@ -1,0 +1,76 @@
+.wrapper
+	display: flex
+	font-family: Quicksand, sans-serif
+	width: 224px
+	height: 246px
+	margin: 10px auto
+
+	*
+		box-sizing: border-box
+
+.item
+	display: grid
+	grid: 80px 1fr / repeat(2, 1fr)
+
+	&__image
+		grid-column: span 2
+
+		img
+			display: block
+			width: 80%
+			margin: 0 auto
+
+	&__text
+		padding-right: 8px
+		font-size: 13px
+		line-height: 1.1
+		align-self: flex-end
+
+		strong
+			display: inline-block
+			margin-right: 5px
+			font-weight: 700
+
+	&__price
+		align-self: flex-end
+		justify-self: flex-end
+
+		.item-price__discount
+			text-align: center
+			width: 95px
+			padding: 6px 8px
+			font-family: "Montserrat", "sans-serif"
+			line-height: 1
+			text-transform: uppercase
+
+			&.item-price__discount--default
+				background: #f9f9f9
+				border: 3px solid yellow
+
+			h4
+				font-size: 22px
+				font-weight: 900
+				margin: 3px 0
+
+			p
+				font-size: 12px
+				font-weight: 700
+
+				&.small
+					font-size: 70%
+					margin: 3px 0
+
+			&.item-price__discount--more-saves
+				background: yellow
+				padding: 3px 2px 5px
+
+			h5
+				font-size: 20px
+				font-weight: 900
+				margin: 3px 0
+
+			.tiny
+				font-size: 7px
+				font-weight: 500
+				text-transform: none
+				margin: 1px 0

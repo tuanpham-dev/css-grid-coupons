@@ -1,0 +1,29 @@
+extends inc/template
+
+block config
+	-
+		config = Object.assign(config, {
+			styleCss: 'item'
+		})
+
+block content
+	main.wrapper
+		.item
+			.item__image
+				img(src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/fruit.png')
+			.item__text
+				strong Dried Mangoes, Dried Apricots
+				small 200g
+			.item__price
+				.item-price__discount.item-price__discount--default
+					h4
+						span $
+						| 2.49
+					p.small with card
+
+				.item-price__discount.item-price__discount--more-saves
+					p.small.divider Also save
+					h5
+						span $
+						| 1 off
+					p.tiny With retweet of store's latest tweet
